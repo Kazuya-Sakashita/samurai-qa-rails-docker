@@ -12,6 +12,7 @@ apt-get update && apt-get install -y yarn
 
 # レポジトリがシステムに加えられたらパッケージリストをアップデートしてからYarnをインストールする
 RUN apt-get update -qq && apt-get install -y nodejs yarn
+RUN apt-get install -y vim
 RUN mkdir /myapp
 
 # Dockerコンテナ上の作業ディレクトリ
